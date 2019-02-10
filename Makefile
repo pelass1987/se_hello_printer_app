@@ -40,3 +40,6 @@ docker_push: docker_build
 		- make lint
 		- make docker_build
 		- make docker_push
+
+test_smoke:
+		curl --fail 127.0.0.1:5000
